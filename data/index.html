@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumenco - Offline Digital Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1>Lumenco</h1>
+                    <div class="logo-icon">📚</div>
+                </div>
+                <p class="subtitle">Offline Digital Learning System</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="badge">
+                <span class="badge-icon">✓</span>
+                Works Completely Offline
+            </div>
+
+            <div class="hero">
+                <h2>Education Without Internet</h2>
+                <p class="hero-description">
+                    Access learning materials anytime, anywhere. Designed for rural and internet-limited environments.
+                </p>
+            </div>
+
+            <div class="login-options">
+                <div class="option-card student-card">
+                    <div class="card-icon">✏️</div>
+                    <h3>Student Login</h3>
+                    <p>Access study materials, homework, and quizzes</p>
+                    <button class="btn btn-primary" onclick="navigateTo('student-auth.html')">
+                        Enter as Student
+                    </button>
+                </div>
+
+                <div class="option-card teacher-card">
+                    <div class="card-icon">🖊</div>
+                    <h3>Teacher Login</h3>
+                    <p>Upload and manage educational content</p>
+                    <button class="btn btn-secondary" onclick="navigateTo('teacher-login.html')">
+                        Enter as Teacher
+                    </button>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">📱</span>
+                    <h4>Mobile Friendly</h4>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <h4>Fast Loading</h4>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <h4>Secure Access</h4>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p> 🔆Lumenco - Learning without Limits!🔆 </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

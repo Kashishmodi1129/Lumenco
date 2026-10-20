@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Class - Lumenco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header has-back-btn">
+            <button class="back-btn">← Back</button>
+            <div class="header-title">
+                <h1>Select Your Class</h1>
+            </div>
+            <div class="user-info">
+                <span class="user-icon">👨‍🎓</span>
+                <span>Student ▾</span>
+                <div class="user-menu" id="userMenu">
+                    <button class="profile-btn">👤 Profile</button>
+                    <button class="settings-btn">⚙️ Settings</button>
+                    <hr>
+                    <button class="logout-btn">🔐 Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="selection-intro">
+                <h2>Choose Your Class Grade</h2>
+                <p>Select your class to access subject-specific learning materials</p>
+            </div>
+
+            <div class="class-grid">
+                <div class="class-card" onclick="selectClass(6)">
+                    <div class="class-number">6</div>
+                    <h3>Class 6</h3>
+                    <p>Beginner level curriculum</p>
+                    <div class="subject-count">
+                        <span>📚</span>
+                        5 Subjects Available
+                    </div>
+                    <button class="btn btn-primary">Select Class 6</button>
+                </div>
+
+                <div class="class-card" onclick="selectClass(7)">
+                    <div class="class-number">7</div>
+                    <h3>Class 7</h3>
+                    <p>Intermediate level curriculum</p>
+                    <div class="subject-count">
+                        <span>📚</span>
+                        5 Subjects Available
+                    </div>
+                    <button class="btn btn-primary">Select Class 7</button>
+                </div>
+
+                <div class="class-card" onclick="selectClass(8)">
+                    <div class="class-number">8</div>
+                    <h3>Class 8</h3>
+                    <p>Advanced level curriculum</p>
+                    <div class="subject-count">
+                        <span>📚</span>
+                        5 Subjects Available
+                    </div>
+                    <button class="btn btn-primary">Select Class 8</button>
+                </div>
+            </div>
+
+            <div class="offline-notice">
+                <span class="notice-icon">🔋</span>
+                All class materials are stored offline and ready to use
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources - Lumenco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header resource-header">
+            <button class="back-btn" onclick="navigateTo('subject-select.html')">← Subjects</button>
+            <div class="header-center">
+                <h1 id="subjectTitle">Science</h1>
+                <p class="subject-info">All resources available offline</p>
+            </div>
+            <div class="user-info" onclick="toggleUserMenu()">
+                <span class="user-icon">👨‍🎓</span>
+                <span>Student ▾</span>
+                <div class="user-menu" id="userMenu">
+                    <button onclick="goToProfile()">👤 Profile</button>
+                    <button onclick="goToSettings()">⚙️ Settings</button>
+                    <hr>
+                    <button class="logout-btn" onclick="logout()">🔐 Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="resource-tabs">
+                <button class="tab-btn active" onclick="switchTab('notes')" data-tab="notes">
+                    📝 Notes
+                </button>
+                <button class="tab-btn" onclick="switchTab('homework')" data-tab="homework">
+                    📋 Homework
+                </button>
+                <button class="tab-btn" onclick="switchTab('books')" data-tab="books">
+                    📚 Books
+                </button>
+                <button class="tab-btn" onclick="switchTab('quizzes')" data-tab="quizzes">
+                    ✏️ Quizzes
+                </button>
+            </div>
+
+            <div class="tab-content active" id="notesTab">
+                <div class="resource-header-section">
+                    <h2>Study Notes</h2>
+                    <p>Detailed chapter-wise notes for better understanding</p>
+                </div>
+                <div class="chapter-grid" id="notesGrid"></div>
+            </div>
+
+            <div class="tab-content" id="homeworkTab">
+                <div class="resource-header-section">
+                    <h2>Homework Assignments</h2>
+                    <p>Practice questions and assignments</p>
+                </div>
+                <div class="chapter-grid" id="homeworkGrid"></div>
+            </div>
+
+            <div class="tab-content" id="booksTab">
+                <div class="resource-header-section">
+                    <h2>Textbooks & References</h2>
+                    <p>Complete textbooks and reference materials</p>
+                </div>
+                <div class="chapter-grid" id="booksGrid"></div>
+            </div>
+
+            <div class="tab-content" id="quizzesTab">
+                <div class="resource-header-section">
+                    <h2>Interactive Quizzes</h2>
+                    <p>Test your knowledge with chapter-wise quizzes</p>
+                </div>
+                <div class="chapter-grid" id="quizzesGrid"></div>
+            </div>
+
+            <div class="download-section">
+                <h3>📥 All Resources Available Offline</h3>
+                <p>All learning materials are stored locally on your device. No internet connection required.</p>
+                <div class="storage-info">
+                    <div class="storage-item">
+                        <span class="storage-icon">💾</span>
+                        <div>
+                            <strong>Local Storage</strong>
+                            <small>All files stored on ESP32</small>
+                        </div>
+                    </div>
+                    <div class="storage-item">
+                        <span class="storage-icon">⚡</span>
+                        <div>
+                            <strong>Instant Access</strong>
+                            <small>No loading time</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>`

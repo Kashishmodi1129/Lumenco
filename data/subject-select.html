@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Subject - Lumenco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-btn" onclick="navigateTo('class-select.html')">← Back</button>
+            <div class="header-center">
+                <h1>Select Subject</h1>
+                <p class="class-info" id="classInfo">Class 6</p>
+            </div>
+            <div class="user-info" onclick="toggleUserMenu()">
+                <span class="user-icon">👨‍🎓</span>
+                <span>Student ▾</span>
+                <div class="user-menu" id="userMenu">
+                    <button onclick="goToProfile()">👤 Profile</button>
+                    <button onclick="goToSettings()">⚙️ Settings</button>
+                    <hr>
+                    <button class="logout-btn" onclick="logout()">🔐 Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="subject-selection">
+                <h2>Available Subjects</h2>
+                <p>Choose a subject to access notes, homework, books, and quizzes</p>
+            </div>
+
+            <div class="subject-grid">
+                <div class="subject-card" onclick="selectSubject('science')">
+                    <div class="subject-icon" style="background-color: #ffeb3b;">🔬</div>
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Biology</p>
+                    <div class="chapter-count">8 Chapters</div>
+                </div>
+
+                <div class="subject-card" onclick="selectSubject('mathematics')">
+                    <div class="subject-icon" style="background-color: #4caf50;">🧮</div>
+                    <h3>Mathematics</h3>
+                    <p>Algebra, Geometry, Calculus</p>
+                    <div class="chapter-count">10 Chapters</div>
+                </div>
+
+                <div class="subject-card" onclick="selectSubject('english')">
+                    <div class="subject-icon" style="background-color: #2196f3;">📖</div>
+                    <h3>English</h3>
+                    <p>Grammar, Literature, Writing</p>
+                    <div class="chapter-count">7 Chapters</div>
+                </div>
+
+                <div class="subject-card" onclick="selectSubject('social')">
+                    <div class="subject-icon" style="background-color: #ff9800;">🗺️</div>
+                    <h3>Social Studies</h3>
+                    <p>History, Geography, Civics</p>
+                    <div class="chapter-count">6 Chapters</div>
+                </div>
+
+                <div class="subject-card" onclick="selectSubject('computer')">
+                    <div class="subject-icon" style="background-color: #9c27b0;">💻</div>
+                    <h3>Computer</h3>
+                    <p>Programming, Hardware, Software</p>
+                    <div class="chapter-count">9 Chapters</div>
+                </div>
+            </div>
+
+            <div class="quick-access">
+                <h3>Quick Access</h3>
+                <div class="quick-buttons">
+                    <button class="btn btn-outline" onclick="selectSubject('science')">
+                        🔬 Science
+                    </button>
+                    <button class="btn btn-outline" onclick="selectSubject('mathematics')">
+                        🧮 Mathematics
+                    </button>
+                    <button class="btn btn-outline" onclick="selectSubject('english')">
+                        📖 English
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

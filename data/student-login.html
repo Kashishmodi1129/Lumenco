@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Lumenco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-btn" onclick="navigateTo('index.html')">← Home</button>
+            <h1>Student Portal</h1>
+        </header>
+
+        <main class="main-content login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="login-icon">👨‍🎓</div>
+                    <h2>Welcome Student!</h2>
+                    <p>Access all your learning materials offline</p>
+                </div>
+
+                <div class="student-login-options">
+                    <div class="info-card">
+                        <div class="info-icon">🔐</div>
+                        <h3>Secure Login</h3>
+                        <p>Login with your student credentials for personalized access.</p>
+                        <button class="btn btn-primary" onclick="navigateTo('student-auth.html')" style="margin-top: 1rem;">
+                            Login with Credentials
+                        </button>
+                    </div>
+
+                    <div class="info-card" style="margin-top: 2rem;">
+                        <div class="info-icon">📚</div>
+                        <h3>Guest Access</h3>
+                        <p>Continue without login to access general materials.</p>
+                        <button class="btn btn-outline" onclick="navigateTo('class-select.html')" style="margin-top: 1rem;">
+                            Continue as Guest →
+                        </button>
+                    </div>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            All content available offline
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            Track your progress
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            Save bookmarks and notes
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

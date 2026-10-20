@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Lumenco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header has-back-btn">
+            <button class="back-btn">← Home</button>
+            <div class="header-title">
+                <h1>Teacher Dashboard</h1>
+            </div>
+            <div class="user-info">
+                <span class="user-icon">👩‍🏫</span>
+                <span>Teacher ▾</span>
+                <div class="user-menu" id="userMenu">
+                    <button class="profile-btn">👤 Profile</button>
+                    <button class="settings-btn">⚙️ Settings</button>
+                    <hr>
+                    <button class="logout-btn">🔐 Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="dashboard-welcome">
+                <h2>Welcome, Educator!</h2>
+                <p>Manage and upload educational content for your students</p>
+            </div>
+
+            <div class="content-management">
+                <h3 class="section-title">Content Management</h3>
+                
+                <div class="management-cards">
+                    <div class="manage-card" onclick="showUploadForm('notes')">
+                        <div class="manage-icon">📝</div>
+                        <h4>Notes</h4>
+                        <p>Upload and organize study notes by chapter</p>
+                        <button class="btn btn-outline">Manage</button>
+                    </div>
+
+                    <div class="manage-card" onclick="showUploadForm('homework')">
+                        <div class="manage-icon">📋</div>
+                        <h4>Homework</h4>
+                        <p>Create and assign homework tasks</p>
+                        <button class="btn btn-outline">Manage</button>
+                    </div>
+
+                    <div class="manage-card" onclick="showUploadForm('books')">
+                        <div class="manage-icon">📚</div>
+                        <h4>Books</h4>
+                        <p>Upload textbooks and reference materials</p>
+                        <button class="btn btn-outline">Manage</button>
+                    </div>
+
+                    <div class="manage-card" onclick="showUploadForm('quizzes')">
+                        <div class="manage-icon">✏️</div>
+                        <h4>Quizzes</h4>
+                        <p>Create interactive quizzes and tests</p>
+                        <button class="btn btn-outline">Manage</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upload-section" id="uploadSection">
+                <h3 class="section-title">Upload New Content</h3>
+                <div class="upload-form">
+                    <div class="form-group">
+                        <label for="contentType">Content Type</label>
+                        <select id="contentType">
+                            <option value="notes">Notes</option>
+                            <option value="homework">Homework</option>
+                            <option value="books">Books</option>
+                            <option value="quizzes">Quizzes</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contentTitle">Title</label>
+                        <input type="text" id="contentTitle" placeholder="Enter content title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contentClass">For Class</label>
+                        <select id="contentClass">
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                            <option value="8">Class 8</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contentSubject">Subject</label>
+                        <select id="contentSubject">
+                            <option value="science">Science</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="english">English</option>
+                            <option value="social">Social Studies</option>
+                            <option value="computer">Computer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contentChapter">Chapter</label>
+                        <input type="text" id="contentChapter" placeholder="e.g., Chapter 1: Introduction">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contentFile">Upload File</label>
+                        <div class="file-upload">
+                            <input type="file" id="contentFile">
+                            <label for="contentFile" class="file-label">Choose File</label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="uploadContent()">
+                        Upload Content
+                    </button>
+
+                    <div class="upload-note">
+                        <span class="note-icon">ℹ️</span>
+                        This is a UI demonstration. Files are not actually uploaded.
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
